@@ -1,0 +1,191 @@
+.Footer_container {
+    width: 100%;
+    height: 416px;
+    background-color: #301446;
+    color: white;
+    padding: 30px;
+}
+
+.Footer_item_top {
+    display: flex;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.Footer_item_Link {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+.Footer_item_Link>a {
+    font-family: 'Chalkboard SE';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 57px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.Footer_item_copyright {
+    margin-top: 62px;
+}
+
+.Footer_item_copyright {
+    font-size: 24px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 320px) {
+    .Footer_container {
+        width: 100%;
+        height: auto;
+        background-color: #301446;
+        color: white;
+        padding: 10px;
+    }
+    .Footer_item_top {
+        display: flex;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .Footer_item_Link {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 15px;
+    }
+    .Footer_item_Link>a {
+        font-family: 'Chalkboard SE';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        color: #FFFFFF;
+        width: 50%;
+        text-decoration: none;
+    }
+    .Footer_item_copyright {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Mobile devices */
+    .Footer_container {
+        width: 100%;
+        height: auto;
+        background-color: #301446;
+        color: white;
+        padding: 10px;
+    }
+    .Footer_item_top {
+        display: flex;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .Footer_item_Link {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 15px;
+    }
+    .Footer_item_Link>a {
+        font-family: 'Chalkboard SE';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        color: #FFFFFF;
+        width: 50%;
+        text-decoration: none;
+    }
+    .Footer_item_copyright {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 760px) {
+    /* iPads, Tablet */
+    .Footer_container {
+        width: 100%;
+        height: auto;
+        background-color: #301446;
+        color: white;
+        padding: 10px;
+    }
+    .Footer_item_top {
+        display: flex;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .Footer_item_Link {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 15px;
+    }
+    .Footer_item_Link>a {
+        font-family: 'Chalkboard SE';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        color: #FFFFFF;
+        width: 50%;
+        text-decoration: none;
+    }
+    .Footer_item_copyright {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+    /* small screens, laptops */
+    .Footer_container {
+        width: 100%;
+        height: auto;
+        background-color: #301446;
+        color: white;
+        padding: 10px;
+    }
+    .Footer_item_top {
+        display: flex;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .Footer_item_Link {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 15px;
+    }
+    .Footer_item_Link>a {
+        font-family: 'Chalkboard SE';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        color: #FFFFFF;
+        width: 50%;
+        text-decoration: none;
+    }
+    .Footer_item_copyright {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1299px) {
+    /* Desktops, large screens */
+}
+
+@media (min-width: 1300px) {
+    /* Extra large screens, TV devices */
+}

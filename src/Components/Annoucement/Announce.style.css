@@ -1,0 +1,217 @@
+.annoucement_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background: #EA7052;
+}
+
+
+/* .hide_annoucement {
+        transform: translateY(-100px);
+        transition: all 2s ease-out;
+        /* display: none; */
+
+
+/* background: #301446; */
+
+
+/* display: none; */
+
+
+/* animation: slowmo 4s linear 2s; */
+
+
+/* transform: translateY(-100px); */
+
+
+/* display: none; 
+    
+}
+*/
+
+.annoucement_items {
+    position: relative;
+    margin-right: 80px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.annoucement_btnNew {
+    width: 213px;
+    height: 75px;
+    font-size: 36px;
+    color: white;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+}
+
+.annoucement_btnNew:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.annoucement_text {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Chalkboard SE';
+    color: white;
+    text-decoration: underline;
+}
+
+.annoucement_btnClose {
+    /* position: absolute; */
+    height: 50px;
+    width: 50px;
+    right: 2px;
+    border-radius: 50%;
+}
+
+.annoucement_btnClose:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Media Queries */
+
+@media (max-width: 320px) {
+    .annoucement_container {
+        height: 50px;
+    }
+    .annoucement_items {
+        margin-right: 0px;
+        width: 100%;
+    }
+    .annoucement_btnNew {
+        width: 40px;
+        height: 25px;
+        font-size: 12px;
+        border-radius: 4px;
+    }
+    .annoucement_text {
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .annoucement_btnClose {
+        position: relative;
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Mobile devices */
+    .annoucement_container {
+        height: 50px;
+    }
+    .annoucement_items {
+        margin-right: 0px;
+        width: 100%;
+    }
+    .annoucement_btnNew {
+        width: 40px;
+        height: 25px;
+        font-size: 12px;
+        border-radius: 4px;
+    }
+    .annoucement_text {
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .annoucement_btnClose {
+        position: relative;
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 760px) {
+    /* iPads, Tablet */
+    .annoucement_container {
+        height: 65px;
+    }
+    .annoucement_items {
+        margin-right: 0px;
+        width: 100%;
+    }
+    .annoucement_btnNew {
+        width: 50px;
+        height: 30px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+    .annoucement_text {
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .annoucement_btnClose {
+        position: relative;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+    /* small screens, laptops */
+    .annoucement_container {
+        height: 65px;
+    }
+    .annoucement_items {
+        margin-right: 0px;
+        width: 100%;
+    }
+    .annoucement_btnNew {
+        width: 55px;
+        height: 30px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+    .annoucement_text {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .annoucement_btnClose {
+        position: relative;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1299px) {
+    /* Desktops, large screens */
+    .annoucement_container {
+        height: 75px;
+    }
+    .annoucement_items {
+        margin-left: 10px;
+        margin-right: 0px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .annoucement_btnNew {
+        width: 80px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 6px;
+    }
+    .annoucement_text {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .annoucement_btnClose {
+        position: relative;
+        right: 30px;
+        height: 38px;
+        width: 38px;
+    }
+}
+
+@media (min-width: 1300px) {
+    /* Extra large screens, TV devices */
+}

@@ -1,0 +1,97 @@
+.companyLogo_conatiner {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.companyLogo {
+    width: 66px;
+    height: 65px;
+    margin-right: 24px;
+}
+
+.companyLogo_text {
+    font-family: Chalkboard SE;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 69px;
+    text-align: left;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 320px) {
+    .companyLogo {
+        width: 20px;
+        height: 20px;
+        margin-right: 4px;
+    }
+    .companyLogo_text {
+        font-size: 14px;
+        font-weight: 200;
+        text-align: left;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Mobile devices */
+    .companyLogo {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+    .companyLogo_text {
+        font-size: 18px;
+        font-weight: 300;
+        text-align: left;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 760px) {
+    /* iPads, Tablet */
+    .companyLogo {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    .companyLogo_text {
+        font-size: 24px;
+        font-weight: 300;
+        text-align: left;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+    /* small screens, laptops */
+    .companyLogo {
+        width: 55px;
+        height: 55px;
+        margin-right: 10px;
+    }
+    .companyLogo_text {
+        font-size: 28px;
+        font-weight: 500;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1299px) {
+    /* Desktops, large screens */
+    .companyLogo {
+        width: 70px;
+        height: 70px;
+        margin-right: 14px;
+    }
+    .companyLogo_text {
+        font-size: 34px;
+        font-weight: 500;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1300px) {
+    /* Extra large screens, TV devices */
+}

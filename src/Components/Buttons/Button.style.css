@@ -1,0 +1,170 @@
+.btnLarge {
+    width: 400px;
+    height: 80px;
+    background: #EA7052;
+    border-radius: 16px;
+    font-family: 'Chalkboard SE';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: white;
+    border: none;
+}
+
+.btnLarge:hover {
+    cursor: pointer;
+}
+
+.btnSmallL {
+    width: 180px;
+    height: 60px;
+    border: 1px solid #EA7052;
+    box-sizing: border-box;
+    border-radius: 16px;
+    font-family: 'Chalkboard SE';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFFFFF;
+    background: none;
+}
+
+.btnSmallL:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.btnSmallD {
+    width: 180px;
+    height: 60px;
+    border: 1px solid #EA7052;
+    box-sizing: border-box;
+    border-radius: 16px;
+    font-family: 'Chalkboard SE';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFFFFF;
+    background: #EA7052;
+}
+
+.btnSmallD:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 320px) {
+    .btnSmallD {
+        width: 60px;
+        height: 30px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .btnSmallL {
+        width: 60px;
+        height: 30px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .btnLarge {
+        width: 150px;
+        height: 35px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Mobile devices */
+    .btnSmallD {
+        width: 80px;
+        height: 35px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .btnSmallL {
+        width: 80px;
+        height: 35px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .btnLarge {
+        width: 150px;
+        height: 35px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 760px) {
+    /* iPads, Tablet */
+    .btnSmallD {
+        width: 80px;
+        height: 35px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .btnSmallL {
+        width: 80px;
+        height: 35px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .btnLarge {
+        width: 150px;
+        height: 35px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+    /* small screens, laptops */
+    .btnSmallD {
+        width: 140px;
+        height: 45px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .btnSmallL {
+        width: 140px;
+        height: 45px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .btnLarge {
+        width: 280px;
+        height: 50px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1299px) {
+    /* Desktops, large screens */
+    .btnSmallD {
+        width: 150px;
+        height: 47px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .btnSmallL {
+        width: 150px;
+        height: 47px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .btnLarge {
+        width: 255px;
+        height: 55px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1300px) {
+    /* Extra large screens, TV devices */
+}

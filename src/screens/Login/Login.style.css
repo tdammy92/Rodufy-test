@@ -1,0 +1,637 @@
+.Login__container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.login__side {
+    max-width: 20%;
+    height: 100%;
+}
+
+.login__side>img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.login_content {
+    background: #E5E5E5;
+    width: 84%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid green; */
+}
+
+.login_box {
+    width: 40%;
+    height: 60%;
+    max-height: 700px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    /* border: 2px solid blue; */
+}
+
+.login_box>h3 {
+    font-weight: 700;
+    font-size: 64px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.login__form {
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.email__input {
+    width: 80%;
+    height: 60px;
+    background: #F4F4F4;
+    border-radius: 12px;
+    border: none;
+    margin-top: 20px;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+.password__input {
+    width: 80%;
+    height: 60px;
+    background: #F4F4F4;
+    border-radius: 12px;
+    border: none;
+    margin-top: 20px;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+.email__input::placeholder,
+.password__input::placeholder {
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+.email__input:focus,
+.password__input:focus {
+    outline: 1px solid #EA7052;
+}
+
+.loginForm__btn {
+    width: 80%;
+    height: 60px;
+    background: #EA7052;
+    border-radius: 12px;
+    border: none;
+    margin-top: 20px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.cta {
+    margin-top: 20px;
+}
+
+.cta>p {
+    font-size: 22px;
+    color: dimgray;
+}
+
+.cta>p>a {
+    font-size: 22px;
+    color: dimgray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 320px) {
+    .Login__container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+    }
+    .login__side {
+        max-width: 20%;
+        height: 100%;
+        display: none;
+    }
+    .login__side>img {
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+    .login_content {
+        background: #E5E5E5;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid green; */
+    }
+    .login_box {
+        width: 80%;
+        height: 50%;
+        max-height: 700px;
+        background: white;
+        padding: 10px;
+        border-radius: 12px;
+        /* border: 2px solid blue; */
+    }
+    .login_box>h3 {
+        font-weight: 700;
+        font-size: 24px;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    .login__form {
+        display: flex;
+        height: 70%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .email__input {
+        width: 80%;
+        height: 60px;
+        background: #F4F4F4;
+        border-radius: 10px;
+        border: none;
+        margin-top: 16px;
+        font-size: 14px;
+        padding-left: 5px;
+    }
+    .password__input {
+        width: 80%;
+        height: 60px;
+        background: #F4F4F4;
+        border-radius: 10px;
+        border: none;
+        margin-top: 20px;
+        font-size: 16px;
+        padding-left: 5px;
+    }
+    .email__input::placeholder,
+    .password__input::placeholder {
+        font-size: 16px;
+        padding-left: 8px;
+    }
+    .email__input:focus,
+    .password__input:focus {
+        outline: 1px solid #EA7052;
+    }
+    .loginForm__btn {
+        width: 60%;
+        height: 40px;
+        background: #EA7052;
+        border-radius: 12px;
+        border: none;
+        margin-top: 20px;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .cta {
+        margin-top: 20px;
+    }
+    .cta>p {
+        font-size: 16px;
+        color: dimgray;
+    }
+    .cta>p>a {
+        font-size: 16px;
+        color: dimgray;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Mobile devices */
+    .Login__container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+    }
+    .login__side {
+        max-width: 20%;
+        height: 100%;
+        display: none;
+    }
+    .login__side>img {
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+    .login_content {
+        background: #E5E5E5;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid green; */
+    }
+    .login_box {
+        width: 90%;
+        height: 50%;
+        max-height: 700px;
+        background: white;
+        padding: 10px;
+        border-radius: 12px;
+        /* border: 2px solid blue; */
+    }
+    .login_box>h3 {
+        font-weight: 700;
+        font-size: 28px;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    .login__form {
+        display: flex;
+        height: 70%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .email__input {
+        width: 80%;
+        height: 60px;
+        background: #F4F4F4;
+        border-radius: 10px;
+        border: none;
+        margin-top: 16px;
+        font-size: 14px;
+        padding-left: 8px;
+    }
+    .password__input {
+        width: 80%;
+        height: 60px;
+        background: #F4F4F4;
+        border-radius: 10px;
+        border: none;
+        margin-top: 20px;
+        font-size: 16px;
+        padding-left: 8px;
+    }
+    .email__input::placeholder,
+    .password__input::placeholder {
+        font-size: 16px;
+        padding-left: 8px;
+    }
+    .email__input:focus,
+    .password__input:focus {
+        outline: 1px solid #EA7052;
+    }
+    .loginForm__btn {
+        width: 60%;
+        height: 40px;
+        background: #EA7052;
+        border-radius: 12px;
+        border: none;
+        margin-top: 20px;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .cta {
+        margin-top: 20px;
+    }
+    .cta>p {
+        font-size: 16px;
+        color: dimgray;
+    }
+    .cta>p>a {
+        font-size: 16px;
+        color: dimgray;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 760px) {
+    /* iPads, Tablet */
+    .Login__container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+    }
+    .login__side {
+        max-width: 20%;
+        height: 100%;
+        display: none;
+    }
+    .login__side>img {
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+    .login_content {
+        background: #E5E5E5;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid green; */
+    }
+    .login_box {
+        width: 70%;
+        height: 60%;
+        max-height: 700px;
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        /* border: 2px solid blue; */
+    }
+    .login_box>h3 {
+        font-weight: 700;
+        font-size: 54px;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    .login__form {
+        display: flex;
+        height: 70%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .email__input {
+        width: 80%;
+        height: 60px;
+        background: #F4F4F4;
+        border-radius: 12px;
+        border: none;
+        margin-top: 20px;
+        font-size: 22px;
+        padding-left: 20px;
+    }
+    .password__input {
+        width: 80%;
+        height: 60px;
+        background: #F4F4F4;
+        border-radius: 12px;
+        border: none;
+        margin-top: 20px;
+        font-size: 22px;
+        padding-left: 20px;
+    }
+    .email__input::placeholder,
+    .password__input::placeholder {
+        font-size: 22px;
+        padding-left: 20px;
+    }
+    .email__input:focus,
+    .password__input:focus {
+        outline: 1px solid #EA7052;
+    }
+    .loginForm__btn {
+        width: 80%;
+        height: 60px;
+        background: #EA7052;
+        border-radius: 12px;
+        border: none;
+        margin-top: 20px;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .cta {
+        margin-top: 20px;
+    }
+    .cta>p {
+        font-size: 22px;
+        color: dimgray;
+    }
+    .cta>p>a {
+        font-size: 22px;
+        color: dimgray;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+    /* small screens, laptops */
+    .Login__container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+    }
+    .login__side {
+        max-width: 20%;
+        height: 100%;
+    }
+    .login__side>img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+    .login_content {
+        background: #E5E5E5;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .login_box {
+        width: 65%;
+        height: 60%;
+        max-height: 700px;
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        /* border: 2px solid blue; */
+    }
+    .login_box>h3 {
+        font-weight: 700;
+        font-size: 64px;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    .login__form {
+        display: flex;
+        height: 70%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .email__input {
+        width: 80%;
+        height: 60px;
+        background: #F4F4F4;
+        border-radius: 12px;
+        border: none;
+        margin-top: 20px;
+        font-size: 22px;
+        padding-left: 20px;
+    }
+    .password__input {
+        width: 80%;
+        height: 60px;
+        background: #F4F4F4;
+        border-radius: 12px;
+        border: none;
+        margin-top: 20px;
+        font-size: 22px;
+        padding-left: 20px;
+    }
+    .email__input::placeholder,
+    .password__input::placeholder {
+        font-size: 22px;
+        padding-left: 20px;
+    }
+    .email__input:focus,
+    .password__input:focus {
+        outline: 1px solid #EA7052;
+    }
+    .loginForm__btn {
+        width: 80%;
+        height: 60px;
+        background: #EA7052;
+        border-radius: 12px;
+        border: none;
+        margin-top: 20px;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .cta {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .cta>p {
+        font-size: 22px;
+        color: dimgray;
+    }
+    .cta>p>a {
+        font-size: 22px;
+        color: dimgray;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1299px) {
+    /* Desktops, large screens */
+    .Login__container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+    }
+    .login__side {
+        max-width: 20%;
+        height: 100%;
+    }
+    .login__side>img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .login_content {
+        background: #E5E5E5;
+        width: 84%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid green; */
+    }
+    .login_box {
+        width: 55%;
+        height: 60%;
+        max-height: 700px;
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        /* border: 2px solid blue; */
+    }
+    .login_box>h3 {
+        font-weight: 700;
+        font-size: 54px;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    .login__form {
+        display: flex;
+        height: 70%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .email__input {
+        width: 80%;
+        height: 60px;
+        background: #F4F4F4;
+        border-radius: 12px;
+        border: none;
+        margin-top: 20px;
+        font-size: 22px;
+        padding-left: 20px;
+    }
+    .password__input {
+        width: 80%;
+        height: 60px;
+        background: #F4F4F4;
+        border-radius: 12px;
+        border: none;
+        margin-top: 20px;
+        font-size: 22px;
+        padding-left: 20px;
+    }
+    .email__input::placeholder,
+    .password__input::placeholder {
+        font-size: 22px;
+        padding-left: 20px;
+    }
+    .email__input:focus,
+    .password__input:focus {
+        outline: 1px solid #EA7052;
+    }
+    .loginForm__btn {
+        width: 80%;
+        height: 60px;
+        background: #EA7052;
+        border-radius: 12px;
+        border: none;
+        margin-top: 20px;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .cta {
+        margin-top: 20px;
+    }
+    .cta>p {
+        font-size: 22px;
+        color: dimgray;
+    }
+    .cta>p>a {
+        font-size: 22px;
+        color: dimgray;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 1300px) {
+    /* Extra large screens, TV devices */
+}
