@@ -31,6 +31,9 @@ function Landing() {
 	const navigate = useNavigate()
 	const User = useSelector((state)=>state.User);
 
+
+
+
 	const isAuth = User? true:false;
 	
 	return (
@@ -73,6 +76,8 @@ function Landing() {
             <div className="top_leftPart_container">
 
 							<div className='mission_container'>
+
+						
 								<h3>
 									Our mission is to{" "}
 									<span style={{ color: "#EA7052" }}>advance</span> humanity
@@ -106,6 +111,8 @@ function Landing() {
 				<section className='gettingStarted_container'>
 					<div className='gettingStarted_left'>
 						<div className='gettingStarted_leftContainer'>
+
+						{User?.email}
 							<h4>
 								Everything you’ll need to{" "}
 								<span style={{ color: "#EA7052" }}>excel</span> in life
@@ -116,7 +123,7 @@ function Landing() {
 								life, all for free!
 							</p>
 
-							<BtnLarge btnText={"Get Started "} click={() => {}} />
+							<BtnLarge btnText={"Get Started "} click={() => navigate('/home')} />
 						</div>
 					</div>
 					<div className='gettingStarted_right'>

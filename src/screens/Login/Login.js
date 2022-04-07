@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, Link, useLocation } from "react-router-dom";
 import axios from "axios";
-import {useSelector,useDispatch} from 'react-redux'
+import {useDispatch} from 'react-redux'
 
 import "./Login.style.css";
 import SideImage from "../../assets/Images/sideImage.svg";

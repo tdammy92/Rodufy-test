@@ -96,6 +96,10 @@
     cursor: pointer;
 }
 
+.loginForm__btn:hover {
+    opacity: 0.7;
+}
+
 .cta {
     margin-top: 20px;
 }

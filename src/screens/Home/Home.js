@@ -1,8 +1,8 @@
 // Module Imports
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
-import { Link ,useNavigate} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // Local Imports
 import { BtnLarge, BtnSmallD } from "../../Components/Buttons/Buttons";
@@ -11,25 +11,15 @@ import { TopPost, TrendingPost } from "./Post/Post";
 import ChevronUpIcon from "../../assets/Images/chevronUp.png";
 import "./Home.style.css";
 import BaseApi from "../../utility/BaseApi";
-import { addPost,removeUser } from "../../store/action";
-
-
-
-
-
-
+import { addPost, removeUser } from "../../store/action";
 
 function Home() {
 
+	const [ShowCount, setShowCount] = useState(4);
+	const { User, Posts } = useSelector((state) => state);
 
+	const name = JSON.parse(User).email.split("@")[0];
 
-
-	const {User ,Posts} = useSelector((state) => state);
-	const name = User?.email?.split("@")[0]
-
-
-
-	
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 
@@ -39,9 +29,9 @@ function Home() {
 			.get(`${BaseApi}/products`)
 			.then((res) => {
 				// console.log(res.data);
-				// dispatch(addPost(res.data))
+				// dispatch(addPost(res.data));
 
-				// 		console.log(res.data.data);
+				// console.log(res.data.data);
 				// setPosts(res.data.data);
 				dispatch(addPost(res.data.data));
 			})
@@ -50,22 +40,23 @@ function Home() {
 			});
 	}
 
+	//function to handle the load more tranding post
+
+	function HandleShoreMOre() {
+		if (ShowCount < Posts.length) {
+			setShowCount(ShowCount + 2);
+		}
+	}
 
 	function HandleLogout() {
-
-		console.log("i was cliked");
 		dispatch(removeUser());
-		navigate('/')
-		
+		navigate("/");
 	}
 
 	useEffect(() => {
 		// calling the get post function in a useeffect without dependency so it called only when d page just loads
 		getPost();
 	}, []);
-
-	
-	
 
 	return (
 		<div className='home__container'>
@@ -75,7 +66,7 @@ function Home() {
 					<Logo />
 
 					<div className='header__right'>
-					 <h2>Hi {name}</h2>
+						<h2>Hi {name}</h2>
 
 						<BtnSmallD btnText='Logout' click={HandleLogout} />
 					</div>
@@ -89,15 +80,14 @@ function Home() {
 						<img src={ChevronUpIcon} alt='' />
 						<h4>Top Post</h4>
 					</div>
-					 
-						<div className='top__sectionList'>
-							{Posts.length > 0
-								? Posts?.map((ite, ind) => {
-										return <TopPost {...ite} key={ind} />;
-								  })
-								: null}
-						</div>
-					
+
+					<div className='top__sectionList'>
+						{Posts
+							? Posts.slice(0, 6).map((ite, ind) => {
+									return <TopPost {...ite} key={ind} />;
+							  })
+							: null}
+					</div>
 				</div>
 			</section>
 
@@ -108,17 +98,19 @@ function Home() {
 						<img src={ChevronUpIcon} alt='' />
 						<h4>Trending</h4>
 					</div>
-					
-						<div className='trending__List'>
-						{Posts.length > 0
-							? Posts?.map((ite, ind) => {
+
+					<div className='trending__List'>
+						{Posts
+							? Posts.slice(0, ShowCount).map((ite, ind) => {
 									return <TrendingPost {...ite} key={ind} />;
 							  })
 							: null}
 					</div>
 				</div>
 				<div className='btn__more'>
-					<BtnLarge btnText='Load More' />
+					{ShowCount != Posts.length ? (
+						<BtnLarge btnText='Load More' click={HandleShoreMOre} />
+					) : null}
 				</div>
 			</section>
 		</div>
