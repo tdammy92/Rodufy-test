@@ -73,6 +73,8 @@ function Home() {
 				</div>
 			</section>
 
+
+
 			{/* top post section starts here */}
 			<section className='topPost__section'>
 				<div className='topPost__wrapper'>
@@ -107,6 +109,9 @@ function Home() {
 							: null}
 					</div>
 				</div>
+
+
+				{/* load more button  */}
 				<div className='btn__more'>
 					{ShowCount != Posts.length ? (
 						<BtnLarge btnText='Load More' click={HandleShoreMOre} />

@@ -4,7 +4,7 @@ import Landing from "./screens/LandingPage/Landing";
 import Home from "./screens/Home/Home.js";
 import Login from "./screens/Login/Login";
 import Register from "./screens/Login/Register";
-import Footer from "./Components/Footer/Footer";
+
 import Layouts from "./RouteConfig/Layouts";
 import Auth from "./RouteConfig/Protected";
 

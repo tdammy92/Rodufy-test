@@ -1,7 +1,7 @@
 import { actionTypes } from "./constant"
 
 
-
+//action to adduser
 export function addUser(user) {
 
     return {
@@ -12,7 +12,7 @@ export function addUser(user) {
     
 }
 
-
+//action to add post from d result returned from the product api
 export function addPost(post) {
     return {
         type:actionTypes.ADD_POST,
@@ -22,7 +22,7 @@ export function addPost(post) {
 }
 
 
-
+//action to remove user from the app and logout
 export function removeUser() {
     return {
         type:actionTypes.REMOVE_USER
